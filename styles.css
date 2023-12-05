@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-Grey: hsl(234, 29%, 20%);
+    --charcoal-Grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.right {
+    width: 70%;
+}
+
+.left {
+    width: 30%;
+}
+
+.left img {
+    width: 90%;
+}
+
+ul {
+    list-style-image: url(./assets/images/icon-success.svg);
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px 20px;
+    font-family: inherit;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid hsl(231, 7%, 60%);
+}
+
+button {
+    font-family: inherit;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: hsl(235, 18%, 26%);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+    transition: all 1s;
+}
+
+
+h1 {
+    font-size: 30px;
+}
+
+.hide {
+    display: none;
+}
+
+.container-2 {
+    background-color: white;
+    width: 800px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.container-2 h1 {
+    font-size: 40px;
+}
+
+.icon-container-2 {
+    width: 50px;
+}
+
+.container-2 button {
+    width: 100%;
+}
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0.0rem;
+    width: 100%;
+    padding: 0.0rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left img {
+        content: url("./assets/images/illustration-sign-up-mobile.svg");
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .container-2 {
+        min-height: 100vh;
+        width: 50%;
+        padding-right: 3rem;
+    }
+
+
+}
